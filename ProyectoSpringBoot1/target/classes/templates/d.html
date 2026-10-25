@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>D - Inversión de dependencias</title>
+</head>
+<body>
+
+<nav>
+    <a th:href="@{/s}">S</a> |
+    <a th:href="@{/o}">O</a> |
+    <a th:href="@{/l}">L</a> |
+    <a th:href="@{/i}">I</a> |
+    <a th:href="@{/d}">D</a>
+</nav>
+
+<h1>Principio de inversión de dependencias</h1>
+
+<p>
+    El principio de inversión de dependencias establece que los módulos
+    de alto nivel no deben depender directamente de los módulos de bajo
+    nivel. Ambos deben depender de abstracciones, como interfaces.
+    Además, las abstracciones no deben depender de los detalles;
+    los detalles deben depender de las abstracciones.
+</p>
+
+<p>
+    Por ejemplo, un servicio de notificaciones puede depender de una
+    interfaz llamada Notificador, en lugar de depender directamente
+    de una clase que envía correos. Las clases que envían correos
+    o mensajes SMS implementan esa interfaz. Así se puede cambiar
+    el medio de envío sin modificar el servicio.
+</p>
+
+</body>
+</html>

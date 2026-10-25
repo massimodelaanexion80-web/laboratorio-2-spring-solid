@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>I - Segregación de interfaces</title>
+</head>
+<body>
+
+<nav>
+    <a th:href="@{/s}">S</a> |
+    <a th:href="@{/o}">O</a> |
+    <a th:href="@{/l}">L</a> |
+    <a th:href="@{/i}">I</a> |
+    <a th:href="@{/d}">D</a>
+</nav>
+
+<h1>Principio de segregación de interfaces</h1>
+
+<p>
+    El principio de segregación de interfaces establece que una clase
+    no debe estar obligada a depender de métodos que no utiliza.
+    Por eso, es preferible crear interfaces pequeñas y específicas
+    en lugar de una sola interfaz que reúna muchas responsabilidades.
+</p>
+
+<p>
+    Por ejemplo, una interfaz para equipos de oficina que incluya
+    imprimir y escanear obligaría a una impresora básica a implementar
+    una función que no tiene. Una mejor solución sería separar esas
+    funciones en las interfaces Impresora y Escaner. Así, cada equipo
+    implementa únicamente las interfaces que necesita.
+</p>
+
+</body>
+</html>

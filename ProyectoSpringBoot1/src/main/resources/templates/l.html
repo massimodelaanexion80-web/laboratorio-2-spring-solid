@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>L - Sustitución de Liskov</title>
+</head>
+<body>
+
+<nav>
+    <a th:href="@{/s}">S</a> |
+    <a th:href="@{/o}">O</a> |
+    <a th:href="@{/l}">L</a> |
+    <a th:href="@{/i}">I</a> |
+    <a th:href="@{/d}">D</a>
+</nav>
+
+<h1>Principio de sustitución de Liskov</h1>
+
+<p>
+    El principio de sustitución de Liskov establece que un objeto de una
+    clase derivada debe poder reemplazar a un objeto de su clase base
+    sin alterar el funcionamiento correcto del programa. Para lograrlo,
+    la clase derivada debe respetar el comportamiento esperado de la
+    clase base.
+</p>
+
+<p>
+    Por ejemplo, si una clase Ave tiene un método volar, una clase
+    Pinguino que herede de ella no podría cumplir ese comportamiento.
+    Una mejor solución sería colocar el método volar en una interfaz
+    para aves voladoras y permitir que Pinguino herede solamente las
+    características que sí puede cumplir.
+</p>
+
+</body>
+</html>

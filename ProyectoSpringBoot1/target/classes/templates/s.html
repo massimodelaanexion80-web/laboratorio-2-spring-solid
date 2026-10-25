@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>S - Responsabilidad única</title>
+</head>
+<body>
+
+<nav>
+    <a th:href="@{/s}">S</a> |
+    <a th:href="@{/o}">O</a> |
+    <a th:href="@{/l}">L</a> |
+    <a th:href="@{/i}">I</a> |
+    <a th:href="@{/d}">D</a>
+</nav>
+
+<h1>Principio de responsabilidad única</h1>
+
+<p>
+    El principio de responsabilidad única establece que una clase debe
+    tener una sola razón para cambiar. Esto significa que debe encargarse
+    de una responsabilidad concreta, en lugar de mezclar tareas que
+    cambian por motivos diferentes.
+</p>
+
+<p>
+    Por ejemplo, una clase que calcula el total de una factura no debería
+    encargarse también de guardarla en una base de datos o enviarla por
+    correo. Separar esas responsabilidades facilita el mantenimiento
+    y las pruebas del programa.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>O - Abierto cerrado</title>
+</head>
+<body>
+
+<nav>
+    <a th:href="@{/s}">S</a> |
+    <a th:href="@{/o}">O</a> |
+    <a th:href="@{/l}">L</a> |
+    <a th:href="@{/i}">I</a> |
+    <a th:href="@{/d}">D</a>
+</nav>
+
+<h1>Principio de abierto cerrado</h1>
+
+<p>
+    El principio de abierto cerrado establece que las entidades de
+    software deben estar abiertas a la extensión, pero cerradas a la
+    modificación. Esto significa que debe ser posible agregar nuevos
+    comportamientos sin cambiar el código existente que ya funciona.
+</p>
+
+<p>
+    Por ejemplo, un sistema de pagos puede utilizar una interfaz común
+    para procesar pagos. Si se necesita agregar un nuevo método de pago,
+    se crea otra clase que implemente esa interfaz, sin modificar las
+    clases de los métodos anteriores ni el código que utiliza la interfaz.
+</p>
+
+</body>
+</html>
